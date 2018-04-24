@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<style type="text/css">
+
+		* {
+			margin: 0;
+  			padding: 0;
+  		}
+
+		body {
+			background:#e5e5e5;
+		}
+
+		.bg {
+			position: fixed;
+			z-index: -1;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			transition: .25s;
+			pointer-events: none;
+		}
+
+		li {  
+			list-style:none;
+		 }
+
+		li a { 
+			display:block;
+		    float:left;
+		    width:25%;
+		    padding:25px 0;
+		    text-align:center;
+		    font-family: 'HeydingsCommonIconsRegular', Helvetida Neue, sans-serif;
+		    font-weight:700;
+		    letter-spacing:1px;
+		    font-size:40px;
+		    color:#fff;
+		    background:#ccc;
+		    text-decoration:none;
+		    text-transform:uppercase;
+		    text-shadow:2px 2px 0 rgba(0,0,0,.25);
+		    transition:.25s;
+		}
+
+		li a:hover  {
+		    margin:-10px 0 0 0;
+		}
+
+		.item { 
+			width:500px;
+		    margin:60px auto 0 auto;
+		    border-radius: 10px 10px 10px 10px;
+		    overflow:hidden;
+		}
+       
+		.item li:first-child a {  
+			background:#e23e57 !important;
+		}
+		.item li:nth-child(2) a { 
+			background:#88304e !important;
+		}
+		.item li:nth-child(3) a { 
+			background:#522546 !important;
+		}
+		.item li:nth-child(4) a { 
+			background:#311d3f !important;}
+
+		.item li:first-child:hover ~ .bg {
+		  background: #e23e57;
+		}
+		.item li:nth-child(2):hover ~ .bg {
+		  background: #88304e;
+		}
+		.item li:nth-child(3):hover ~ .bg {
+		  background: #522546;
+		}
+		.item li:nth-child(4):hover ~ .bg {
+		  background: #311d3f;
+		}
+
+	</style>
+
+	<ul class="item">
+	  <li><a>Item 1</a></li>
+	  <li><a>Item 2</a></li>
+	  <li><a>Item 3</a></li>
+	  <li><a>Item 4</a></li>
+	  <li class="bg"></li>
+	</ul>
+
+
+</body>
+</html>
